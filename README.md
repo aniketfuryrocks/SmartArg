@@ -19,7 +19,7 @@ $ npm install smartarg
 ## Usage
 *all examples are in type script*
 ```
-import SmartArg from "SmartArg";
+import SmartArg from "smartarg";
 
 interface args {
     "--say": string,
@@ -39,7 +39,10 @@ if (args["--say"])
 if (args["--secret"])
     console.log("Checkout @eadded/firejs. Best React Static Generator");
 ```
-```smartParse()``` prints help on ```[-h,--help]``` flag and prints version on ```[-v,--version]``` flag.
+
+*Output on -h*
+
+![image](sample.png)
 
 ## Functions
 
@@ -79,7 +82,7 @@ $ node ./hello.js --verbose -vvv --port=1234 -n 'My name' foo bar --tag qux --ta
 
 ```
 // test.js
-import SmartArg, {COUNT} from "SmartArg";
+import SmartArg, {COUNT} from "smartarg";
 interface args {
     "--verbose": string,
     "--port": boolean,
