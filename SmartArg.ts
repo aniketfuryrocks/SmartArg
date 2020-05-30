@@ -53,7 +53,7 @@ export default class<T> {
         return this;
     }
 
-    option(flags: [string, keyof T | "--help" | "--version"] | [keyof T | "--help" | "--version"], valueType: any, description: string) {
+    option(flags: [string, keyof T | "--help" | "--version"] | [keyof T | "--help" | "--version"], valueType: any, description: string | undefined = undefined) {
         if (flags.length > 2)
             throw new Error("There can't be more than 2 flags for a command");
         if (flags.length == 2 && flags[0].length != 2)

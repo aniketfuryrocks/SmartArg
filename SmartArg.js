@@ -4,7 +4,6 @@ const Arg_1 = require("./Arg");
 var Arg_2 = require("./Arg");
 exports.COUNT = Arg_2.COUNT;
 exports.flag = Arg_2.flag;
-
 class default_1 {
     constructor() {
         this.args = [];
@@ -12,32 +11,26 @@ class default_1 {
         this._primary = 1;
         this._secondary = 33;
     }
-
     name(name) {
         this._name = name;
         return this;
     }
-
     version(version) {
         this._version = version;
         return this;
     }
-
     description(description) {
         this._description = description;
         return this;
     }
-
     usage(usage) {
         this._usage = usage;
         return this;
     }
-
     example(example, description) {
         this._examples.push([example, description]);
         return this;
     }
-
     primary(color) {
         this._primary = color;
         return this;
@@ -48,7 +41,7 @@ class default_1 {
         return this;
     }
 
-    option(flags, valueType, description) {
+    option(flags, valueType, description = undefined) {
         if (flags.length > 2)
             throw new Error("There can't be more than 2 flags for a command");
         if (flags.length == 2 && flags[0].length != 2)
@@ -69,7 +62,6 @@ class default_1 {
         });
         return Arg_1.arg(spec, options);
     }
-
     smartParse(options = undefined) {
         this.option(["-h", "--help"], Boolean, "print help");
         this.option(["-v", "--version"], Boolean, "print version");
@@ -94,7 +86,6 @@ class default_1 {
             return args;
         process.exit(0);
     }
-
     displayHelp() {
         process.stdout.write("\n");
         printHeading(this._primary, this._name);
@@ -116,17 +107,12 @@ class default_1 {
         process.stdout.write("\n");
     }
 }
-
 exports.default = default_1;
-
 function printHeading(color, msg) {
     process.stdout.write(`\n    \x1b[${color}m${msg}\x1b[0m`);
 }
-
 exports.printHeading = printHeading;
-
 function printChild(color, msg, value = undefined) {
     process.stdout.write(`\n\t  \x1b[${color}m${msg}\x1b[0m\n\t\t${value ? value + "\n" : ""}`);
 }
-
 exports.printChild = printChild;

@@ -41,6 +41,22 @@ if (args["--secret"])
 ```
 ```smartParse()``` prints help on ```[-h,--help]``` flag and prints version on ```[-v,--version]``` flag.
 
+## Functions
+
+```name(string)```          specify project name
+
+```version(string)```       specify project version
+
+```description(string)```   specify project description
+
+```usage(string)```         specify commandline usage,default : ```name``` <flag>
+
+```examples(string)```      specify an example, default : ```name``` -h
+
+```primaryColor(number)```  specify [ANSI](https://en.wikipedia.org/wiki/ANSI_escape_code) color code, default : 1
+
+```secondaryColor(number)```specify [ANSI](https://en.wikipedia.org/wiki/ANSI_escape_code) color code, default : 33
+
 ## Result
 
 It returns an object with any values present on the command-line (missing options are thus
