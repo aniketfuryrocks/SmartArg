@@ -1,6 +1,6 @@
 {
   "name": "smartarg",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Forked repo of Arg, with smart help and version logging",
   "main": "SmartArg.js",
   "author": "Aniket Prajapati <prajapati.ani306@gmail.com>",
