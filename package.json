@@ -8,7 +8,6 @@
   "repository": "https://github.com/eAdded/arg.git",
   "private": true,
   "files": [
-    "Arg.d.ts",
     "Arg.js",
     "SmartArg.js",
     "SmartArg.d.ts"
