@@ -1,4 +1,4 @@
-# Smart Arg
+# Smart Arg 🤓
 
 `Smart Arg` is a forked repo of [Arg](https://github.com/vercel/arg), with smart help and version logging.
 
