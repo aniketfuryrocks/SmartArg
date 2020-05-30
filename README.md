@@ -47,15 +47,19 @@ if (args["--secret"])
 
 ```version(string)```       specify project version
 
-```description(string)```   specify project description
+```description(string)``` specify project description
 
-```usage(string)```         specify commandline usage,default : ```name``` <flag>
+```usage(string)``` specify commandline usage, default : ```name``` <flag>
 
-```examples(string)```      specify an example, default : ```name``` -h
+```examples(string)``` specify an example, default : ```name``` -h
 
-```primaryColor(number)```  specify [ANSI](https://en.wikipedia.org/wiki/ANSI_escape_code) color code, default : 1
+```primaryColor(number)``` specify [ANSI](https://en.wikipedia.org/wiki/ANSI_escape_code) color code, default : 1
 
-```secondaryColor(number)```specify [ANSI](https://en.wikipedia.org/wiki/ANSI_escape_code) color code, default : 33
+```secondaryColor(number)``` specify [ANSI](https://en.wikipedia.org/wiki/ANSI_escape_code) color code, default : 33
+
+```smartParse(config)``` terminates the program after printing help on ```[-h,--help]``` and version on ```[-v,--version]```, else returns [result](#result)
+
+```parse(config)``` returns [result](#result)
 
 ## Result
 
