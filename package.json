@@ -1,6 +1,6 @@
 {
   "name": "smartarg",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Forked repo of Arg, with smart help and version logging",
   "keywords": [
     "arg",
