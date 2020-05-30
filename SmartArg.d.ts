@@ -19,11 +19,8 @@ export default class<T> {
     usage(usage: string): this;
     example(example: string, description: string): this;
     primary(color: number): this;
-
     secondary(color: number): this;
-
     option(flags: [string, keyof T | "--help" | "--version"] | [keyof T | "--help" | "--version"], valueType: any, description?: string | undefined): this;
-
     parse(options?: Options): T;
     smartParse(options?: Options): T | never;
     displayHelp(): void;

@@ -35,12 +35,10 @@ class default_1 {
         this._primary = color;
         return this;
     }
-
     secondary(color) {
         this._secondary = color;
         return this;
     }
-
     option(flags, valueType, description = undefined) {
         if (flags.length > 2)
             throw new Error("There can't be more than 2 flags for a command");
@@ -51,7 +49,6 @@ class default_1 {
         this.args.push([flags.pop(), flags.pop(), valueType, description]);
         return this;
     }
-
     parse(options = undefined) {
         const spec = {};
         this.args.forEach(arg => {
