@@ -1,0 +1,19 @@
+{
+  "name": "smartarg",
+  "version": "0.1.0",
+  "description": "Forked repo of Arg, with smart help and version logging.",
+  "main": "SmartArg.js",
+  "author": "Aniket Prajapati <prajapati.ani306@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/eAdded/arg.git",
+  "private": true,
+  "files": [
+    "Arg.d.ts",
+    "Arg.js",
+    "SmartArg.js",
+    "SmartArg.d.ts"
+  ],
+  "dependencies": {
+    "@types/node": "^14.0.6"
+  }
+}
