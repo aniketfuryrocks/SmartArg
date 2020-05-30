@@ -6,7 +6,7 @@
   "author": "Aniket Prajapati <prajapati.ani306@gmail.com>",
   "license": "MIT",
   "repository": "https://github.com/eAdded/arg.git",
-  "private": true,
+  "private": false,
   "files": [
     "Arg.js",
     "SmartArg.js",
