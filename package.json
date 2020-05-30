@@ -12,7 +12,7 @@
     "SmartArg.js",
     "SmartArg.d.ts"
   ],
-  "dependencies": {
+  "devDependencies": {
     "@types/node": "^14.0.6"
   }
 }
